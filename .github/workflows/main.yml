@@ -1,4 +1,4 @@
-name: php -> s3 -> Elastic Beanstalk
+name: .net -> s3 -> Elastic Beanstalk
 on:
   push:
     branches: [ main ]
@@ -23,10 +23,12 @@ jobs:
 
       - name: 'Make zip file'
         run: |
-          zip ${{ env.DEPLOY_PACAKAGE_NAME }} index.html
+          zip -r ${{ env.DEPLOY_PACAKAGE_NAME }} ./ -x *.git*
           ls
+        # zip ${{ env.DEPLOY_PACAKAGE_NAME }} index.html
+          
         # -r = recursively, ./=current directory, -x = exclude
-        #run: zip -r ${{ env.DEPLOY_PACAKAGE_NAME }} ./ -x *.git*
+          #run: zip -r ${{ env.DEPLOY_PACAKAGE_NAME }} ./ -x *.git*
         
       - name: "Configure AWS Credentials"
         uses: aws-actions/configure-aws-credentials@v1
