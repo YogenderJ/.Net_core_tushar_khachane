@@ -14,7 +14,6 @@ env:
 #  DEPLOY_PACAKAGE_NAME      : "php-app.zip"
   AWS_REGION_NAME           : "us-west-1"
   
-
 jobs:
   build_and_create_Artifact:
     runs-on: ubuntu-latest
