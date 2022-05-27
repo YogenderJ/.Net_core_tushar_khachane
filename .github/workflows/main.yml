@@ -1,9 +1,10 @@
-name: .net -> s3 -> Elastic Beanstalk
+name: dotnet -> s3 -> Elastic Beanstalk
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  workflow_dispatch
+#  push:
+#    branches: [ main ]
+#  pull_request:
+#    branches: [ main ]
  
 #Setting up ssome environment variables
 env:    
