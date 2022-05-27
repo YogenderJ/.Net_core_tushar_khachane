@@ -8,9 +8,9 @@ on:
 #Setting up ssome environment variables
 env:    
   EB_PACAKAGE_S3_BUCKET_NAME: "yog.net1"
-  EB_APPLICATION_NAME       : "php-app"
-  EB_ENVIRONMENT_NAME       : "Phpapp-env"
-  DEPLOY_PACAKAGE_NAME      : "php-app-${{ github.sha }}.zip"
+  EB_APPLICATION_NAME       : "dotnet-app"
+  EB_ENVIRONMENT_NAME       : "Dotnetapp-env"
+  DEPLOY_PACAKAGE_NAME      : "dotnet-app-${{ github.sha }}.zip"
 #  DEPLOY_PACAKAGE_NAME      : "php-app.zip"
   AWS_REGION_NAME           : "us-west-1"
   
