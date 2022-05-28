@@ -1,4 +1,4 @@
-name: dotnet -> s3 -> Elastic Beanstalk
+name: php -> s3 -> Elastic Beanstalk
 on:
   workflow_dispatch
 #  push:
